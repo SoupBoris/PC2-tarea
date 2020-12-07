@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/main.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/main.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/main.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_1.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_1.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_1.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_2.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_2.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_2.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_3.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_3.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_3.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_4.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_4.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_4.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_5.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_5.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_5.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_6.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_6.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_6.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_7.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_7.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_7.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/test_8.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/test_8.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/test_8.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p1.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p1.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p1.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p2.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p2.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p2.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p3.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p3.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p3.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p4.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p4.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p4.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p5.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p5.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p5.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p6.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p6.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p6.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p7.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p7.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p7.cpp"
+},
+{
+  "directory": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/build",
+  "command": "/usr/bin/g++-7   -g -std=gnu++1z -o CMakeFiles/poo2_unit6_2020_2.dir/p8.cpp.o -c /home/sebastian/projects/POOII/poo2_unit6_2020_2/p8.cpp",
+  "file": "/home/sebastian/projects/POOII/poo2_unit6_2020_2/p8.cpp"
+}
+]

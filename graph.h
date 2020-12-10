@@ -31,7 +31,7 @@ using edge_priority_queue_t = priority_queue<edge_t,
 
 using distance_t = size_t;
 const auto infinity_distance = numeric_limits<distance_t>::max();
-//edge_priority_queue_
+
 // Lambda de comparacion
 auto edge_compare = [](edge_t a, edge_t b) {
     return get<2>(a) > get<2>(b);
@@ -63,19 +63,17 @@ class graph_t {
     edge_priority_queue_t edge_priority_queue_;
 
 public:
-    graph_t(): edge_priority_queue_{edge_compare} {}
-
+    graph_t() : edge_priority_queue_{edge_compare} {}
 
     // Adicionar los vertices
-    void add_vertex(const identify_t& key) {
+    void add_vertex(const identify_t &key) {
         if (vertices_.find(key) != end(vertices_)) return;
         vertices_[key] = vertices_.size();
         adjacent_.resize(vertices_.size());
     }
 
-
     // Adicionar las aristas
-    void add_edge(const identify_t& a, const identify_t& b, weight_t w) {
+    void add_edge(const identify_t &a, const identify_t &b, weight_t w) {
         // validar los key
         if (vertices_.find(a) == end(vertices_)) return;
         if (vertices_.find(b) == end(vertices_)) return;
@@ -85,8 +83,6 @@ public:
         // Agregar en el priority queue
         edge_priority_queue_.push({vertices_[a], vertices_[b], w});
     }
-
-
 
     vector<edge_t> kruskal() {
         // Variables
@@ -101,7 +97,7 @@ public:
             auto edge = pq.top();
             pq.pop();
             // Verificacion de Ciclos si son diferentes los une
-            if(fu.find(get<0>(edge)) != fu.find(get<1>(edge))) {
+            if (fu.find(get<0>(edge)) != fu.find(get<1>(edge))) {
                 fu.join(get<0>(edge), get<1>(edge));
                 result.push_back(edge);
             }
@@ -119,33 +115,33 @@ public:
             return visited.find(vx) != end(visited);
         };
         // Partir de la arista menor
-        auto [v, a, w] = edge_priority_queue_.top();
+        auto[v, a, w] = edge_priority_queue_.top();
         // Agrego todos los adjacentes a la lista de disponibles
-        for (const auto& [a, w]: adjacent_[v])
-            available_edges.push({ v, a, w});
+        for (const auto&[a, w]: adjacent_[v])
+            available_edges.push({v, a, w});
         visited.insert(v);
         // Recorriendo aristas disponibles
-        while ( !available_edges.empty()) {
-            auto [v, a, w] = available_edges.top();
+        while (!available_edges.empty()) {
+            auto[v, a, w] = available_edges.top();
             available_edges.pop();
             if (!is_visited(a)) {
                 visited.insert(a);
                 result.emplace_back(v, a, w);
-                for (const auto& [a2, w]: adjacent_[a])
+                for (const auto&[a2, w]: adjacent_[a])
                     if (!is_visited(a2)) {
-                        available_edges.push({ a, a2, w});
+                        available_edges.push({a, a2, w});
                     }
             }
         }
         return result;
     }
 
-    vector<pair<distance_t, vertex_t>> dijsktra(const identify_t& source) {
+    vector<pair<distance_t, vertex_t>> dijsktra(const identify_t &source) {
         // Almacenando los vertices adjacentes
         vector<pair<vertex_t, distance_t>> available_vertices;
         // Las distancias y los vertices previos
-        vector<pair<distance_t, vertex_t>> distance (vertices_.size(),
-                                                     {infinity_distance, 0});
+        vector<pair<distance_t, vertex_t>> distance(vertices_.size(),
+                                                    {infinity_distance, 0});
         // Vertices visitados
         unordered_set<vertex_t> visited;
         // Lambda 
@@ -184,18 +180,17 @@ public:
 
         while (!available_vertices.empty()) {
             // Obtener y Remover el vertex
-            auto [v, d] = top();
+            auto[v, d] = top();
             pop();
             // Lo Marca como visitado
             visited.insert(v);
             // Obtener todos sus adjacentes
-            for (auto [a, w]: adjacent_[v]) {
+            for (auto[a, w]: adjacent_[v]) {
                 if (!is_visited(a)) {
                     if (distance[a].first == infinity_distance) {
                         distance[a] = {d + w, v};
                         push(a, d + w);
-                    }
-                    else if (d + w < distance[a].first) {
+                    } else if (d + w < distance[a].first) {
                         distance[a] = {d + w, v};
                         update(a, d + w);
                     }
@@ -205,16 +200,13 @@ public:
         return distance;
     }
 
-    /*bool is_connected(){
-        return is_connected(vertices_.);
-    }*/
+    bool is_connected();
 
     vector<edge_t> kruskal_max();
 
     vector<edge_t> prim_max();
 
     bool is_connected();
-
 };
 
 #endif

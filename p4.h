@@ -12,7 +12,7 @@
 using namespace std;
 
 template <typename T, template<typename...> class Container>
-vector<pair<T,T>> get_equivalent_pair(Container<T> params1, Container<T> params2, T sum){
+vector<pair<T,T>> get_equivalent_pairs(Container<T> params1, Container<T> params2, T sum){
 
     vector<pair<T,T>> result;
     unordered_set <T> HashStruct (params2.begin(), params2.end()); 

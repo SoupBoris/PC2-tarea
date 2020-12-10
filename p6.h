@@ -88,7 +88,7 @@ public:
     }
   }
 
-  bool are_siblings(node<T> nodoA, node<T> nodoB){
+  bool are_sibling(node<T> nodoA, node<T> nodoB){
       return are_siblings_(nodoA, nodoB);
   }
 

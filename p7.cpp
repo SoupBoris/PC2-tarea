@@ -3,8 +3,6 @@
 //
 
 #include <iostream>
-#include <queue>
-#include <unordered_map>
 #include "p7.h"
 
 using namespace std;
@@ -24,7 +22,7 @@ void pregunta_7_case_1() {
     g.add_edge("E", "C", 5);
     g.add_edge("E", "D", 8);
     // Verificar si esta conectado
-    cout << g.is_connected() << endl;
+    cout << boolalpha << g.is_connected() << endl;
     // Caso de uso #2
     graph_t g2;
     // Vertices
@@ -34,6 +32,6 @@ void pregunta_7_case_1() {
     // Edges
     g2.add_edge("A", "B", 10);
     // Verificar si esta conectado
-    cout << g2.is_connected() << endl;
+    cout << boolalpha << g2.is_connected() << endl;
 }
 

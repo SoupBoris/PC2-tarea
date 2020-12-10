@@ -22,12 +22,12 @@ bool graph_t::is_connected(){
     while(!q.empty()){
         curVertex = q.front();
         q.pop();
-        for(auto edge : curVertex.edges){
-            if(!visited[edge->vertexes[1]]){
-                visited[edge->vertexes[1]] = true;
+        /*for(auto edge : edge_t){ //Aqui deberia haber un for que recorra una copia de la priority queue 
+            if(!visited[edge->vertexes[1]]){  // para que vaya .pop() y vistando los vèrtices conectados al vèrtice en cuestiòn y si alguno
+                visited[edge->vertexes[1]] = true; //no queda visitado, entonces no està connected, si sì, pues sì està connected
                 q.push(edge->vertexes[1]);
             }
-        }
+        }*/
     }
     for(auto p : visited) if(!p.second) return false;
     return true;

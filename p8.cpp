@@ -1,9 +1,4 @@
-//
-// Created by rudri on 10/11/2020.
-//
-
 #include <iostream>
-//#include <string>
 #include "p8.h"
 
 using namespace std;
@@ -22,6 +17,8 @@ void pregunta_8_case_1() {
     g.add_edge("B", "C", 7);
     g.add_edge("E", "C", 5);
     g.add_edge("E", "D", 8);
+    g.add_edge("C", "D", 2);
+    g.add_edge("A", "D", 1);
     // Arbol Expandido Maximo
     for (auto& [a, b, w] : g.kruskal_max())
         cout << a << " " << b << " " << w << endl;

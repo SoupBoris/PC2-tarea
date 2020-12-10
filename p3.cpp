@@ -3,26 +3,20 @@
 //
 
 #include <iostream>
-#include <unordered_set>
 #include <vector>
 #include "p3.h"
 
 using namespace std;
 
-template <typename Container>
-void remove_duplicates(Container& cont) {
-    unordered_set<typename Container::value_type> hashStruct; 
-
-    for(const auto& e : cont) {
-        hashStruct.insert(e);
-    }
-
-    Container temp;
-
-    for(const auto& e : hashStruct) {
-        temp.push_back(e);
-    }
-
-    cont = temp;
+void pregunta_3_case_1() {
+    int n = 0;
+    cin >> n;
+    vector<int> vec(n);
+    for(auto& item: vec)
+        cin >> item;
+    remove_duplicates(vec);
+    for(const auto& item: vec)
+        cout << item << " ";
+    cout << endl;
 }
 

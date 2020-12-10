@@ -2,10 +2,26 @@
 // Created by rudri on 10/11/2020.
 //
 
-#ifndef POO1_PC2_P3_H
-#define POO1_PC2_P3_H
+#include <iostream>
+#include <unordered_set>
+#include <vector>
+#include "p3.cpp"
 
+using namespace std;
 
-void pregunta_3();
+template <typename Container>
+void remove_duplicates(Container& cont) {
+    unordered_set<typename Container::value_type> hashStruct; 
 
-#endif //POO1_PC2_P3_H
+    for(const auto& e : cont) {
+        hashStruct.insert(e);
+    }
+
+    Container temp;
+
+    for(const auto& e : hashStruct) {
+        temp.push_back(e);
+    }
+
+    cont = temp;
+}
